@@ -1,0 +1,49 @@
+baseURL = "http://quelltexterin.github.io"
+languageCode = "de-de"
+title = "quelltexterin"
+
+theme = "quelltexterin"
+copyright = "&copy; <a href=\"https://github.com/soophie\">Antonia Ilski</a> 2018"
+disqusShortname = ""
+googleAnalytics = ""
+# Number of posts per page
+Paginate = 10
+enableRobotsTXT = true
+
+[params]
+dateFormat = "02.01.2006"
+
+[params.assets]
+customCSS = ["css/custom.css"]
+
+[params.info]
+enableSocial = true # Adds OpenGraph and Twitter cards
+homeTitle = "" # Title for home page
+poweredby = true # Adds powered by hugo and kiss below Copyright
+related = true # Includes related articles at the bottom of the article
+
+
+[params.opengraph.facebook]
+admins = [] # array of Facebook IDs
+appID = ""
+pageID = ""
+
+[params.opengraph.twitter]
+page = "" # Twitter Page username. If not set, params.social.twitter will be used.
+
+[params.social]
+
+twitter = "glitzerpopitzer"
+github = "soophie"
+email = "antonia@quelltexterin.de"
+linkedin = "soophie"
+facebook = ""
+instagram = ""
+codepen = "soophie"
+
+[taxonomies]
+tag ="tags"
+
+[blackfriday]
+hrefTargetBlank = true
+

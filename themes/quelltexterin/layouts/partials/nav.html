@@ -1,0 +1,28 @@
+<header>
+  <div class="container">
+      <div class="logo">
+        {{ if eq .IsHome false }}
+        <a class="nav-item" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        {{ else }}
+        <h1>{{ .Site.Title }}</h1>
+        {{ end }}
+      </div>
+
+      <nav>
+        <ul>
+        {{- range $platform, $username := .Site.Params.social -}}
+        {{- if $username -}}
+          <li><a class="level-item" href='{{ print ( index $.Site.Data.theme.social.base $platform ) $username }}' target='_blank' rel='noopener'>
+              <span class="hidden">{{ print $platform }}</span>
+          <span class="icon">
+            <i class>
+              {{- partial "svg/icons" $platform -}}
+            </i>
+          </span>
+        </a></li>
+        {{- end -}}
+        {{- end -}}
+        </ul>
+      </nav>
+  </div>
+</header>
