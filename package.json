@@ -6,7 +6,7 @@
   "scripts": {
     "css:build": "node-sass --recursive --output-style compressed themes/quelltexterin/sources/sass/ --output themes/quelltexterin/static/css",
     "postcss:build": "autoprefixer -b 'last 2 versions' static/css/*.css",
-    "css:watch": "onchange './sources/sass/' -- npm run css:build",
+    "css:watch": "onchange 'themes/quelltexterin/sources/sass/' -- npm run css:build",
     "build": "npm run css:build",
     "prewatch": "npm run build",
     "watch": "npm run css:watch",

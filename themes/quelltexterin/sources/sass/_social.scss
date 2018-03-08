@@ -1,0 +1,30 @@
+.icon {
+  display: inline-block;
+  fill: none;
+  font-size: inherit;
+  height: rem(20px);
+  line-height: inherit;
+  stroke: currentColor;
+  width: rem(20px);
+}
+
+.social-navigation {
+  background: $color-lightgrey;
+  color: #fff;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  li {
+    padding: rem(5px);
+  }
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: $color--primary;
+    }
+  }
+}

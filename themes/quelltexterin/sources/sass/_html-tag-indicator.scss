@@ -1,0 +1,31 @@
+
+@media screen and (min-width: $breakpoint-ml) {
+  %htmlTagIndicator {
+    color: rgba($color-lightgrey, .5);
+    font-family: monospace;
+    font-size: rem(18px);
+    left: -20px;
+    position: relative;
+  }
+
+  h2::before {
+    @extend %htmlTagIndicator;
+    content: '<h2>'
+  }
+
+  h3::before {
+    @extend %htmlTagIndicator;
+    content: '<h3>'
+  }
+
+  h4::before {
+    @extend %htmlTagIndicator;
+    content: '<h4>'
+  }
+
+
+  blockquote::before {
+    @extend %htmlTagIndicator;
+    content: '<blockquote>'
+  }
+}

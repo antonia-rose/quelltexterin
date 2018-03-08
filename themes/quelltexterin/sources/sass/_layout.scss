@@ -1,0 +1,50 @@
+header {
+  background: #fff;
+  box-shadow: rgba($color-lightgrey, .3) 0 2px 3px;
+  margin-bottom: 20px;
+  padding: rem(20px) 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  .logo {
+    color: $color--text;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+    a {
+      color: inherit;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .site-name::before {
+      content: '<';
+    }
+
+    .site-name::after {
+      content: '>';
+    }
+  }
+}
+
+footer {
+  font-size: 1rem;
+  padding: rem(20px);
+  text-align: center;
+}
+
+@media screen and (min-width: $breakpoint-xxl) {
+  header {
+    text-align: center;
+  }
+}
+
+.tags-list {
+  font-family: monospace;
+  text-align: right;
+}

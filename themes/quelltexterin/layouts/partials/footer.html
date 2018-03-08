@@ -1,10 +1,9 @@
 <footer>
-  <div class="container has-text-centered">
-    <p>{{ .Site.Copyright | safeHTML }}</p>
+    <p>{{ .Site.Copyright | safeHTML }}
     {{if .Site.Params.Info.poweredby}}
-      <p>Powered by <a href="https://gohugo.io/">Hugo</a></p>
+      &ndash; Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
     {{ end }}
-  </div>
+    </p>
 </footer>
 {{ if .Site.GoogleAnalytics }}
 {{ template "_internal/google_analytics_async.html" . }}
