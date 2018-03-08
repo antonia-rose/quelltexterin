@@ -14,7 +14,7 @@
     "precommit": "npm run lint",
     "start": "npm run watch",
     "stylelint": "stylelint",
-    "watch": "npm run css:watch",
+    "watch": "npm run css:watch"
   },
   "repository": {
     "type": "git",
