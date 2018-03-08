@@ -6,6 +6,7 @@
     font-size: rem(18px);
     left: -20px;
     position: relative;
+    top: auto;
   }
 
   h2::before {
@@ -22,7 +23,6 @@
     @extend %htmlTagIndicator;
     content: '<h4>'
   }
-
 
   blockquote::before {
     @extend %htmlTagIndicator;

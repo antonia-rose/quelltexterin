@@ -14,7 +14,7 @@ $color--primary: #b52a80;
 $color--secondary: #2ab595;
 $color--text: #42464c;
 
-$color-lightgrey: #a6a6a6;
+$color-lightgrey: lighten(#a6a6a6, .5);
 
 $color-text--paragraph: $color--text;
 $color-text-hyperlink: $color--secondary;

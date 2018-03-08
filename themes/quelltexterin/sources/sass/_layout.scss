@@ -32,10 +32,54 @@ header {
   }
 }
 
+article {
+  margin: 0 0 40px 0;
+}
+
+.tags-list {
+  font-family: monospace;
+  text-align: right;
+}
+
 footer {
   font-size: 1rem;
   padding: rem(20px);
   text-align: center;
+}
+
+.button {
+  background: $color--secondary;
+  color: #fff;
+  display: inline-block;
+  margin: 10px 0;
+  padding: 4px 10px;
+
+  &:hover {
+    color: #fff;
+  }
+
+  &--more {
+    position: relative;
+    transition: padding 0.3s ease-out;
+
+    &::after {
+      background: $color--secondary;
+      content: '';
+      display: block;
+      width: 22px;
+      height: 22px;
+      right: -11px;
+      position: absolute;
+      transform: rotate(45deg);
+      top: 5px;
+      z-index: -1;
+    }
+
+    &:hover {
+      padding-right: 50px;
+      text-decoration: none;
+    }
+  }
 }
 
 @media screen and (min-width: $breakpoint-xxl) {
@@ -44,7 +88,3 @@ footer {
   }
 }
 
-.tags-list {
-  font-family: monospace;
-  text-align: right;
-}

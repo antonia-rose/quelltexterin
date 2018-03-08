@@ -21,6 +21,14 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: inherit;
+    }
+  }
 }
 
 h1 {
@@ -44,11 +52,8 @@ h4 {
   font-size: $font-size--base;
 }
 
-p, li {
-  // font-size: rem(17px);
-}
 
-p, li, h2, h3, h4 {
+p, li {
   font-weight: 200;
   line-height: 1.5;
 
@@ -104,4 +109,10 @@ pre code {
 
 ol {
   list-style-type: decimal-leading-zero;
+}
+
+
+hr {
+ border: none;
+  border-top: 1px solid $color-lightgrey;
 }
