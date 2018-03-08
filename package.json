@@ -4,16 +4,17 @@
   "description": "a minimalistic and lightweight blog",
   "main": "index.html",
   "scripts": {
-    "css:build": "node-sass --recursive --output-style compressed themes/quelltexterin/sources/sass/ --output themes/quelltexterin/static/css",
-    "postcss:build": "autoprefixer -b 'last 2 versions' static/css/*.css",
-    "css:watch": "onchange 'themes/quelltexterin/sources/sass/' -- npm run css:build",
     "build": "npm run css:build",
-    "prewatch": "npm run build",
-    "watch": "npm run css:watch",
-    "start": "npm run watch",
+    "css:build": "node-sass --recursive --output-style compressed themes/quelltexterin/sources/sass/ --output themes/quelltexterin/static/css",
+    "css:watch": "onchange 'themes/quelltexterin/sources/sass/' -- npm run css:build",
     "lint:scss": "npm run stylelint \"themes/quelltexterin/sources/sass/**/*.scss\"; exit 0",
     "lint": "npm run lint:scss",
-    "stylelint": "stylelint"
+    "postcss:build": "autoprefixer -b 'last 2 versions' static/css/*.css",
+    "prewatch": "npm run build",
+    "precommit": "npm run lint",
+    "start": "npm run watch",
+    "stylelint": "stylelint",
+    "watch": "npm run css:watch",
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
   "homepage": "https://github.com/soophie/quelltexterin#readme",
   "devDependencies": {
     "autoprefixer": "^8.1.0",
+    "husky": "^0.15.0-rc.8",
     "node-sass": "^4.7.2",
     "onchange": "^3.3.0",
     "scss-cli": "0.0.6",
