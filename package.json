@@ -10,7 +10,10 @@
     "build": "npm run css:build",
     "prewatch": "npm run build",
     "watch": "npm run css:watch",
-    "start": "npm run watch"
+    "start": "npm run watch",
+    "lint:scss": "npm run stylelint \"themes/quelltexterin/sources/sass/**/*.scss\"; exit 0",
+    "lint": "npm run lint:scss",
+    "stylelint": "stylelint"
   },
   "repository": {
     "type": "git",
@@ -26,6 +29,8 @@
     "autoprefixer": "^8.1.0",
     "node-sass": "^4.7.2",
     "onchange": "^3.3.0",
-    "scss-cli": "0.0.6"
+    "scss-cli": "0.0.6",
+    "stylelint": "^9.1.1",
+    "stylelint-config-sevenval": "^1.4.0"
   }
 }

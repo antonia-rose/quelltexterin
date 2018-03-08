@@ -1,11 +1,7 @@
 @import '../fonts/Raleway/Raleway.css';
 @import 'functions/rem';
-
 @import 'variables';
-
 @import 'mixins/hidden';
-
-@import 'social';
 
 body {
   margin: 0;
@@ -20,4 +16,5 @@ article {
 @import 'grid';
 @import 'html-tag-indicator';
 @import 'layout';
+@import 'social';
 @import 'navigation';

@@ -19,7 +19,12 @@ a {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 
   a {
@@ -52,8 +57,8 @@ h4 {
   font-size: $font-size--base;
 }
 
-
-p, li {
+p,
+li {
   font-weight: 200;
   line-height: 1.5;
 
@@ -61,13 +66,11 @@ p, li {
     font-size: 90%;
     padding: 2px 4px;
     margin: 0 2px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 4px;
     background-color: #f8f8f8;
   }
-}
 
-p, li  {
   a {
     color: $color-text-hyperlink;
     font-weight: 400;
@@ -111,8 +114,7 @@ ol {
   list-style-type: decimal-leading-zero;
 }
 
-
 hr {
- border: none;
+  border: none;
   border-top: 1px solid $color-lightgrey;
 }

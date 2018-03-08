@@ -3,7 +3,7 @@
 }
 
 @mixin visuallyHidden {
-  position: absolute !important;
+  position: absolute !important; // stylelint-disable declaration-no-important
   height: 1px;
   width: 1px;
   overflow: hidden;

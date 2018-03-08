@@ -11,21 +11,21 @@
 
   h2::before {
     @extend %htmlTagIndicator;
-    content: '<h2>'
+    content: '<h2>';
   }
 
   h3::before {
     @extend %htmlTagIndicator;
-    content: '<h3>'
+    content: '<h3>';
   }
 
   h4::before {
     @extend %htmlTagIndicator;
-    content: '<h4>'
+    content: '<h4>';
   }
 
   blockquote::before {
     @extend %htmlTagIndicator;
-    content: '<blockquote>'
+    content: '<blockquote>';
   }
 }

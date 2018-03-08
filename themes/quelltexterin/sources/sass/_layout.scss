@@ -1,5 +1,5 @@
 header {
-  background: #fff;
+  background: #ffffff;
   box-shadow: rgba($color-lightgrey, .3) 0 2px 3px;
   margin-bottom: 20px;
   padding: rem(20px) 0;
@@ -49,18 +49,18 @@ footer {
 
 .button {
   background: $color--secondary;
-  color: #fff;
+  color: #ffffff;
   display: inline-block;
   margin: 10px 0;
   padding: 4px 10px;
 
   &:hover {
-    color: #fff;
+    color: #ffffff;
   }
 
   &--more {
     position: relative;
-    transition: padding 0.3s ease-out;
+    transition: padding .3s ease-out;
 
     &::after {
       background: $color--secondary;
