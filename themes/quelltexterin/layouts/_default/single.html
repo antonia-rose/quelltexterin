@@ -1,9 +1,7 @@
 {{ partial "header" . }}
 {{ partial "nav" . }}
-<section class="section">
+<main>
   <div class="container">
-    <h1 class="title">{{ .Title }}</h1>
-    {{if not .Date.IsZero }}<div class="subtitle is-6">{{ .Date.Format $.Site.Params.DateFormat }}</div>{{ end }}
     {{ if and (.Site.Params.Info.adsense) (.Params.adsenseTop) }}
     {{ partial "adsense" . }}
     {{ end }}
@@ -11,17 +9,15 @@
       {{ .Content }}
       {{ if .Site.Params.Info.related }}
       <div class="related">{{ partial "related" . }}</div>
+      {{ end }}
     </div>
-    {{ end }}
     {{ if .Params.tags }}
-    <div class="is-6 is-pulled-right">
       {{ partial "tags" .Params.tags }}
-    </div>
     {{ end }}
     {{ if and (.Site.Params.Info.adsense)  (.Params.adsenseBottom) }}
     {{ partial "adsense" . }}
     {{ end}}
   </div>
-</section>
+</main>
 {{ partial "disqus" . }}
 {{ partial "footer" . }}

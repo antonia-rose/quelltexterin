@@ -1,0 +1,120 @@
+.hidden {
+  @include visuallyHidden;
+}
+
+body {
+  color: $color--text;
+  font-family: $font--primary;
+  font-size: $font-size--base;
+  line-height: 1.4;
+}
+
+a {
+  color: $color--primary;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-text-hyperlink;
+    text-decoration: underline;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+}
+
+h1 {
+  font-weight: 500;
+  font-size: $font-size--base * 1.2;
+}
+
+h2 {
+  color: $color--primary;
+  font-weight: 200;
+  font-size: $font-size--base * 1.2;
+}
+
+h3 {
+  font-weight: 200;
+  font-size: $font-size--base * 1.2;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: $font-size--base;
+}
+
+p,
+li {
+  font-weight: 200;
+  line-height: 1.5;
+
+  code {
+    font-size: 90%;
+    padding: 2px 4px;
+    margin: 0 2px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+  }
+
+  a {
+    color: $color-text-hyperlink;
+    font-weight: 400;
+  }
+}
+
+blockquote {
+  font-style: italic;
+  margin: rem(20px);
+  position: relative;
+
+  &::before {
+    color: rgba($color-lightgrey, .3);
+    content: '\201E';
+    font-size: rem(50px);
+    line-height: 0;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+  }
+
+  p {
+    font-weight: 400;
+  }
+}
+
+pre {
+  break-inside: avoid;
+}
+
+pre code {
+  background: #f8f8f8;
+  display: block;
+  font-size: 90%;
+  padding: 1em;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
+ol {
+  list-style-type: decimal-leading-zero;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid $color-lightgrey;
+}
