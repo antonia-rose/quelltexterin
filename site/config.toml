@@ -13,9 +13,6 @@ enableRobotsTXT = true
 [params]
 dateFormat = "02.01.2006"
 
-[params.assets]
-customCSS = ["css/custom.css"]
-
 [params.info]
 enableSocial = true # Adds OpenGraph and Twitter cards
 homeTitle = "" # Title for home page
