@@ -5,8 +5,13 @@
 @media screen and (min-width: $breakpoint-ml) {
   .container {
     margin: 0 auto;
-    max-width: $breakpoint-l;
     padding: 0 rem(40px);
+  }
+}
+
+@media screen and (min-width: $breakpoint-ml) {
+  main .container {
+    max-width: 75%;
   }
 }
 

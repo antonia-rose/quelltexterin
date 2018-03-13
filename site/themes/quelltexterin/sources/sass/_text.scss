@@ -10,11 +10,12 @@ body {
 }
 
 a {
-  color: $color--primary;
+  color: $color-text-hyperlink;
   text-decoration: none;
+  transition: color .2s ease-in;
 
   &:hover {
-    color: $color-text-hyperlink;
+    color: $color--secondary;
     text-decoration: underline;
   }
 }
@@ -25,6 +26,7 @@ h3,
 h4,
 h5,
 h6 {
+  break-after: avoid;
   margin: 0;
 
   a {
@@ -72,7 +74,7 @@ li {
   }
 
   a {
-    color: $color-text-hyperlink;
+    color: $color--secondary;
     font-weight: 400;
   }
 }
