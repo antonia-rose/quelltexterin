@@ -6,7 +6,7 @@ services:
     volumes:
       - .:/usr/src/app
     working_dir: /usr/src/app
-    command: sh -c "npm install; npm start"
+    command: "npm start"
   hugo:
     image: yanqd0/hugo
     volumes:
