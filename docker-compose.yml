@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  web:
+    image: node:6-alpine
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    command: sh -c "npm install; npm start"
+  hugo:
+    image: yanqd0/hugo
+    volumes:
+      - ./site:/srv/hugo
+    ports:
+      - 1313:1313
