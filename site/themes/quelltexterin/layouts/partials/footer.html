@@ -1,0 +1,12 @@
+<footer>
+    <p>{{ .Site.Copyright | safeHTML }}
+    {{if .Site.Params.Info.poweredby}}
+      &ndash; Powered by <a href="/about/" target="_blank">Hugo</a>
+    {{ end }}
+    </p>
+</footer>
+{{ if .Site.GoogleAnalytics }}
+{{ template "_internal/google_analytics_async.html" . }}
+{{ end }}
+</body>
+</html>

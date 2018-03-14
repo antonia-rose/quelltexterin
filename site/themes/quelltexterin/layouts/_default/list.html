@@ -1,0 +1,28 @@
+{{ partial "header" . }}
+{{ partial "nav" . }}
+<main class="section">
+    <div class="container">
+        {{ range sort .Paginator.Pages }}
+        <article>
+            <h2 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a>{{ if .Draft }} :: Draft{{ end }}</h2>
+            <div class="content">
+                <p>{{ .Summary | plainify | safeHTML }}</p>
+                {{ if .Truncated }}
+                <a class="button is-link" href="{{ .Permalink }}">Read more
+                    <span class="icon is-small">
+                        <i class="fa fa-angle-double-right"></i>
+                    </span>
+                </a>
+                {{ end }}
+            </div>
+            {{ if .Params.tags }}
+            <div class="subtitle is-6 is-pulled-right">
+                {{ partial "tags" .Params.tags }}
+            </div>
+            {{ end }}
+        </article>
+        {{ end }}
+    </div>
+</main>
+{{ partial "pager" . }}
+{{ partial "footer" . }}

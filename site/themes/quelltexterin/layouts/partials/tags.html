@@ -1,0 +1,7 @@
+<nav class="nav--horizontal">
+  <ul class="tags-list">
+    {{ range . }}
+    <li><a class="subtitle is-6" href="{{ "/tags/" | relURL }}{{ . | urlize }}">#{{ . }}</a></li>
+    {{ end }}
+  </ul>
+</nav>

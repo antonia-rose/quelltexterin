@@ -1,0 +1,21 @@
+
+@import 'breakpoints';
+
+$fontRaleway: 'Raleway', Helvetica, serif;
+
+$font--primary: $fontRaleway;
+$font-size--base: rem(17px) !default;
+
+@media screen and (min-width: $breakpoint-ml) {
+  $font-size--base: rem(20px);
+}
+
+$color--primary: #b52a80;
+$color--secondary: #2ab595;
+$color--text: #42464c;
+
+$color-lightgrey: lighten(#a6a6a6, .5);
+
+$color-text--paragraph: $color--text;
+$color-text-hyperlink: $color--primary;
+
