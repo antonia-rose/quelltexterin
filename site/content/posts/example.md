@@ -3,7 +3,7 @@ title: "Example"
 tags: [] # Adds tags to the post
 cover: "" # Cover used for OpenGraph and Twitter Cards
 date: 2018-03-08T11:08:04+01:00
-draft: false
+draft: true
 ---
 
 Paragraphs are separated by a blank line.

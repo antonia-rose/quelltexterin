@@ -3,7 +3,7 @@ languageCode = "de-de"
 title = "quelltexterin"
 
 theme = "quelltexterin"
-copyright = "&copy; <a href=\"https://github.com/soophie\">Antonia Ilski</a> 2018"
+copyright = "&copy; <a href='\/about'>Antonia Ilski</a> 2018"
 disqusShortname = ""
 googleAnalytics = ""
 # Number of posts per page
