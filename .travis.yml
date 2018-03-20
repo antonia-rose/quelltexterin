@@ -3,6 +3,8 @@ services:
   - docker
 
 language: node_js
+node_js:
+  - "node"
 
 install:
   - docker build -t blog -f Dockerfile.deployment .
