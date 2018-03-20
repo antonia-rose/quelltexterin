@@ -1,9 +1,0 @@
-FROM quelltexterin/hugo:v0.0.1
-
-RUN mkdir -p /var/www/blog
-
-COPY site /var/www/blog/
-
-WORKDIR /var/www/blog
-
-RUN hugo
