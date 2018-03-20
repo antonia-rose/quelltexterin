@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -e
+set -x
+
+docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD";
+docker push quelltexterin/blog:v$1
+
+sloppy change sloppy.yml

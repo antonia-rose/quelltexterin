@@ -1,0 +1,15 @@
+sudo: required
+services:
+  - docker
+
+language: php
+
+before_install:
+  - docker build -t blog -f Dockerfile.deployment
+  - docker run -d blog
+
+deploy:
+  provider: script
+  script: bash ./scripts/application_deploy
+  on:
+    branch: master

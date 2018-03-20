@@ -1,4 +1,4 @@
-FROM quelltexterin/hugo:v0.0.3 as builder
+FROM quelltexterin/hugo as builder
 
 RUN mkdir -p /var/www/blog
 
