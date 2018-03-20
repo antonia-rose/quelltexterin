@@ -1,0 +1,25 @@
+sudo: required
+services:
+  - docker
+
+language: node_js
+node_js:
+  - "node"
+
+install:
+  - docker build -t blog -f Dockerfile.deployment .
+  - docker run -d blog
+
+before_script:
+  - npm install -g stylelint
+  - npm install stylelint-config-sevenval
+
+script:
+  - npm test
+
+deploy:
+  provider: script
+  script: bash ./scripts/application_deploy $TRAVIS_TAG
+  on:
+    tags: true
+    branch: master
