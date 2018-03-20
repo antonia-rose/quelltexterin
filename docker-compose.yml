@@ -6,10 +6,12 @@ services:
     volumes:
       - .:/usr/src/app
     working_dir: /usr/src/app
-    command: "npm build"
+    command: "npm start"
   hugo:
-    image: yanqd0/hugo
+    image: quelltexterin/hugo:v0.0.3
     volumes:
-      - ./site:/srv/hugo
+      - ./site:/var/www/blog
+    working_dir: /var/www/blog
+    command: hugo server --bind=0.0.0.0
     ports:
       - 1313:1313
