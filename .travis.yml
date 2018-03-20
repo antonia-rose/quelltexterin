@@ -5,7 +5,7 @@ services:
 language: php
 
 before_install:
-  - docker build -t blog -f Dockerfile.deployment
+  - docker build -t blog -f Dockerfile.deployment .
   - docker run -d blog
 
 deploy:
