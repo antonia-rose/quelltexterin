@@ -3,6 +3,8 @@ project: quelltexterin
 services:
   frontend:
     hugo:
-      image: quelltexterin/blog:v0.5.3
-      domain: quelltexterin.sloppy.zone
+      image: $docker_image
+      volumes:
+        - path: /srv/hugo
+      domain: $domain
       port: 80
