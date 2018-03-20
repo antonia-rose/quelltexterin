@@ -12,6 +12,7 @@ install:
 
 before_script:
   - npm install -g stylelint
+  - npm install stylelint-config-sevenval
 
 script:
   - npm test
