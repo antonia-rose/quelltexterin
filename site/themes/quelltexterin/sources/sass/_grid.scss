@@ -22,4 +22,9 @@
     column-gap: 100px;
     padding: 0 rem(100px);
   }
+
+  .has-no-columns .container {
+    columns: auto;
+    max-width: $breakpoint-m;
+  }
 }

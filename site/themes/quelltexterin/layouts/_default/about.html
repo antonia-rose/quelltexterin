@@ -1,0 +1,23 @@
+{{ partial "header" . }}
+{{ partial "nav" . }}
+<main class="has-no-columns">
+  <div class="container">
+    {{ if and (.Site.Params.Info.adsense) (.Params.adsenseTop) }}
+    {{ partial "adsense" . }}
+    {{ end }}
+    <div class="content">
+      {{ .Content }}
+      {{ if .Site.Params.Info.related }}
+      <div class="related">{{ partial "related" . }}</div>
+      {{ end }}
+    </div>
+    {{ if .Params.tags }}
+      {{ partial "tags" .Params.tags }}
+    {{ end }}
+    {{ if and (.Site.Params.Info.adsense)  (.Params.adsenseBottom) }}
+    {{ partial "adsense" . }}
+    {{ end}}
+  </div>
+</main>
+{{ partial "disqus" . }}
+{{ partial "footer" . }}
