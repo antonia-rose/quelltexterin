@@ -2,11 +2,14 @@ sudo: required
 services:
   - docker
 
-language: ruby
+language: node_js
 
-before_install:
+install:
   - docker build -t blog -f Dockerfile.deployment .
   - docker run -d blog
+
+script:
+  - npm test
 
 deploy:
   provider: script
