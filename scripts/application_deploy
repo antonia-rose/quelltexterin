@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -e
 set -x
-docker build -t $DOCKER_IMAGE:v$TRAVIS_TAG -f Dockerfile.deyployment .
+docker build -t $DOCKER_IMAGE:v$TRAVIS_TAG -f Dockerfile.deployment .
 docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD";
 docker push $DOCKER_IMAGE:v$TRAVIS_TAG;
 docker run -d $DOCKER_IMAGE:v$TRAVIS_TAG
 
-sloppy change -v docker_image:"$DOCKER_IMAGE:v$TRAVIS_TAG" -v domain:"$DOMAIN" §SLOPPY_FILE
+sloppy change -v docker_image:"$DOCKER_IMAGE:v$TRAVIS_TAG" -v domain:"$DOMAIN" $SLOPPY_FILE
