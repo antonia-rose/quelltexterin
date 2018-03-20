@@ -6,12 +6,12 @@
 {{ if eq .IsHome false }}
 <title>{{ .Title }} | {{ .Site.Title }}</title>
 {{ else }}
-<title>{{ .Site.Params.Info.homeTitle }}</title>
+<title>{{ .Title }}</title>
 {{ end }}
 {{ if .Site.Params.Info.enableSocial }}
 {{- partial "social/opengraph" . -}}
 {{ end }}
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css"/>
+<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css"/>
 {{- range .Site.Params.Assets.customCSS -}}
 <link rel='stylesheet' href='{{ . | relURL }}'>
 {{- end -}}

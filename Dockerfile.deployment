@@ -1,0 +1,12 @@
+FROM quelltexterin/hugo as builder
+
+RUN mkdir -p /var/www/blog
+
+COPY site /var/www/blog/
+
+WORKDIR /var/www/blog
+
+RUN hugo
+
+FROM nginx:1.13-alpine
+COPY --from=builder /var/www/blog/public/ /usr/share/nginx/html
