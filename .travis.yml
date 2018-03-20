@@ -2,7 +2,7 @@ sudo: required
 services:
   - docker
 
-language: php
+language: ruby
 
 before_install:
   - docker build -t blog -f Dockerfile.deployment .
