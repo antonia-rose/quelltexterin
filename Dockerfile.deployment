@@ -6,7 +6,7 @@ COPY site /var/www/blog/
 
 WORKDIR /var/www/blog
 
-RUN hugo -d public
+RUN hugo -d public --templateMetric --debug
 
 FROM nginx:1.13-alpine
 COPY --from=builder /var/www/blog/public/ /usr/share/nginx/html
