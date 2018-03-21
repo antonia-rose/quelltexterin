@@ -1,4 +1,4 @@
-$color--text: #000;
+$color--text: #000000;
 
 body {
   color: $color--text;
@@ -18,8 +18,8 @@ main {
     padding-right: 0;
   }
 
-  a[href^=http]:after {
-    content: " (" attr(href) ") ";
+  a[href ^= 'http']::after {
+    content: ' (' attr(href) ') ';
   }
 }
 
