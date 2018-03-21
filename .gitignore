@@ -2,4 +2,4 @@
 public/
 node_modules/
 
-site/static/css/*.css
+site/**/css/*.css
