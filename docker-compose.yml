@@ -8,7 +8,7 @@ services:
     working_dir: /usr/src/app
     command: "npm start"
   hugo:
-    image: quelltexterin/hugo:v0.0.3
+    image: quelltexterin/hugo:v1.0.0
     volumes:
       - ./site:/var/www/blog
     working_dir: /var/www/blog
