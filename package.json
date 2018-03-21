@@ -5,11 +5,11 @@
   "main": "index.html",
   "scripts": {
     "build": "npm run css:build",
-    "css:build": "node-sass --recursive --output-style compressed site/themes/quelltexterin/sources/sass/ --output site/themes/quelltexterin/static/css",
+    "css:build": "node-sass --recursive --output-style compressed site/themes/quelltexterin/sources/sass/ --output site/static/css",
     "css:watch": "onchange 'site/themes/quelltexterin/sources/sass/' -- npm run css:build",
     "lint:scss": "npm run stylelint \"site/themes/quelltexterin/sources/sass/**/*.scss\"; exit 0",
     "lint": "npm run lint:scss",
-    "postcss:build": "autoprefixer -b 'last 2 versions' static/css/*.css",
+    "postcss:build": "autoprefixer -b 'last 2 versions' site/static/css/*.css",
     "prewatch": "npm run build",
     "precommit": "npm run lint",
     "start": "npm run watch",
