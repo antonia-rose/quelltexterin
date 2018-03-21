@@ -12,10 +12,6 @@ install:
   - docker tag blog $DOCKER_IMAGE:v$TRAVIS_TAG
   - docker push $DOCKER_IMAGE:v$TRAVIS_TAG;
 
-before_script:
-  - npm install -g stylelint
-  - npm install stylelint-config-sevenval
-
 script:
   - npm test
 
