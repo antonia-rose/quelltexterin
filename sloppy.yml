@@ -4,7 +4,5 @@ services:
   frontend:
     hugo:
       image: $docker_image
-      volumes:
-        - path: /srv/hugo
       domain: $domain
       port: 80
