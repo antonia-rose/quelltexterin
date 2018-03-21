@@ -17,6 +17,10 @@ before_script:
 script:
   - npm test
 
+before_deploy:
+  - curl -k -L https://files.sloppy.io/sloppy-`uname -s`-`uname -m` > sloppy
+  - chmod +x sloppy
+
 deploy:
   provider: script
   script: bash ./scripts/application_deploy $TRAVIS_TAG
