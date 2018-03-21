@@ -2,4 +2,4 @@
 public/
 node_modules/
 
-site/themes/quelltexterin/static/css/*.css
+site/static/css/*.css
