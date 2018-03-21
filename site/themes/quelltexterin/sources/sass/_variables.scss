@@ -10,9 +10,9 @@ $font-size--base: rem(17px) !default;
   $font-size--base: rem(20px);
 }
 
-$color--primary: #b52a80;
-$color--secondary: #2ab595;
-$color--text: #42464c;
+$color--primary: #b52a80 !default;
+$color--secondary: #2ab595 !default;
+$color--text: #42464c !default;
 
 $color-lightgrey: lighten(#a6a6a6, .5);
 
