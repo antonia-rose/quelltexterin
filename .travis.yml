@@ -5,6 +5,10 @@ services:
 language: node_js
 node_js:
   - "node"
+  
+before_install:
+  - npm install
+  - npm run build
 
 install:
   - docker build -t blog -f Dockerfile.deployment .
@@ -19,6 +23,6 @@ deploy:
   provider: script
   script: bash ./scripts/application_deploy
   skip_cleanup: true
-  #on:
-   # tags: true
-    # branch: master
+  on:
+    tags: true
+    branch: master
