@@ -1,0 +1,29 @@
+$color--text: #000;
+
+body {
+  color: $color--text;
+}
+
+.button--more {
+  display: none;
+}
+
+.social-navigation {
+  display: none;
+}
+
+main {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  a[href^=http]:after {
+    content: " (" attr(href) ") ";
+  }
+}
+
+footer {
+  padding-left: 0;
+  text-align: left;
+}

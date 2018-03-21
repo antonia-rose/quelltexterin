@@ -19,6 +19,8 @@ homeTitle = "" # Title for home page
 poweredby = true # Adds powered by hugo and kiss below Copyright
 related = true # Includes related articles at the bottom of the article
 
+[params.assets]
+printCSS = ["/css/print.css"]
 
 [params.opengraph.facebook]
 admins = [] # array of Facebook IDs
