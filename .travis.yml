@@ -7,8 +7,10 @@ node_js:
   - "node"
 
 install:
-  - docker build -t blog -f Dockerfile.deployment .
-  - docker run -d blog
+  - docker build -t $DOCKER_IMAGE:v$TRAVIS_TAG -f Dockerfile.deployment .
+  - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+  - docker push $DOCKER_IMAGE:v$TRAVIS_TAG;
+  - docker run -d $DOCKER_IMAGE:v$TRAVIS_TAG
 
 before_script:
   - npm install -g stylelint
@@ -16,10 +18,6 @@ before_script:
 
 script:
   - npm test
-
-before_deploy:
-  - curl -k -L https://files.sloppy.io/sloppy-`uname -s`-`uname -m` > sloppy
-  - chmod +x sloppy
 
 deploy:
   provider: script
