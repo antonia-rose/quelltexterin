@@ -11,9 +11,13 @@
 {{ if .Site.Params.Info.enableSocial }}
 {{- partial "social/opengraph" . -}}
 {{ end }}
-<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css"/>
+<link rel="shortcut icon" href="{{ .Site.BaseURL }}/favicon.ico" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css"b/>
 {{- range .Site.Params.Assets.customCSS -}}
-<link rel='stylesheet' href='{{ . | relURL }}'>
+<link rel='stylesheet' href='{{ . | relURL }}' />
+{{- end -}}
+{{- range .Site.Params.Assets.printCSS -}}
+<link rel='stylesheet' media="print" href='{{ . | relURL }}' />
 {{- end -}}
 </head>
 <body>
