@@ -6,9 +6,13 @@ language: node_js
 node_js:
   - "node"
 
+before_install:
+  - docker build -t blog -f Dockerfile.deployment .
+  - docker run blog
+
 install:
-  - docker build -t $DOCKER_IMAGE:v$TRAVIS_TAG -f Dockerfile.deployment .
   - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+  - docker tag blog $DOCKER_IMAGE:v$TRAVIS_TAG
   - docker push $DOCKER_IMAGE:v$TRAVIS_TAG;
   - docker run -d $DOCKER_IMAGE:v$TRAVIS_TAG
 
