@@ -8,11 +8,7 @@
             <div class="content">
                 <p>{{ .Summary | plainify | safeHTML }}</p>
                 {{ if .Truncated }}
-                <a class="button is-link" href="{{ .Permalink }}">Read more
-                    <span class="icon is-small">
-                        <i class="fa fa-angle-double-right"></i>
-                    </span>
-                </a>
+                <a class="button button--more" href="{{ .Permalink }}">weiterlesen <span class="hidden">zum Thema {{ .Title }}</span> </a>
                 {{ end }}
             </div>
             {{ if .Params.tags }}
