@@ -6,3 +6,6 @@ services:
       image: $docker_image
       domain: $domain
       port: 80
+      ssl: true
+      env:
+        - HAPROXY_0_REDIRECT_TO_HTTPS : "true"
