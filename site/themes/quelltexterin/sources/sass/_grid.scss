@@ -17,14 +17,13 @@
 
 @media screen and (min-width: $breakpoint-xxl) {
   main .container {
+    max-width: $breakpoint-m;
+  }
+
+  .has-columns .container {
     max-width: 100%;
     columns: 2;
     column-gap: 100px;
     padding: 0 rem(100px);
-  }
-
-  .has-no-columns .container {
-    columns: auto;
-    max-width: $breakpoint-m;
   }
 }

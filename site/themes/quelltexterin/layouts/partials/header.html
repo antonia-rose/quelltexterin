@@ -11,6 +11,9 @@
 {{ if .Site.Params.Info.enableSocial }}
 {{- partial "social/opengraph" . -}}
 {{ end }}
+
+<meta name='description' content='{{ partial "data/description" . }}' />
+<meta name="author" content="{{ .Site.Params.social.author }}" />
 <link rel="shortcut icon" href="{{ .Site.BaseURL }}/favicon.ico" />
 <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css"b/>
 {{- range .Site.Params.Assets.customCSS -}}

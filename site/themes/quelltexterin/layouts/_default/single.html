@@ -1,6 +1,6 @@
 {{ partial "header" . }}
 {{ partial "nav" . }}
-<main>
+<main class="has-columns">
   <div class="container">
     {{ if and (.Site.Params.Info.adsense) (.Params.adsenseTop) }}
     {{ partial "adsense" . }}
