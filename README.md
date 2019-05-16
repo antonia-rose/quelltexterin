@@ -1,7 +1,7 @@
 # Deployment
 ## Build hugo image (only if new hugo version is published)
 
-1. run `docker build -t hugo -f Dockerfile.hugo`
+1. run `docker build -t hugo -f Dockerfile.hugo .`
 2. run `docker run hugo`
 3. run `docker login` and login to hub.docker.io
 4. run `docker tag hugo quelltexterin/hugo:v<$version>`
