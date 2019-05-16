@@ -22,6 +22,7 @@
     "font-weight-notation": "numeric",
     "font-family-name-quotes": "always-unless-keyword",
     "at-rule-no-vendor-prefix": true,
+    "no-descending-specificity": null,
     "unit-blacklist": null
   }
 }

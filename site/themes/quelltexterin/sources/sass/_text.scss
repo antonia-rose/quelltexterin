@@ -14,7 +14,8 @@ a {
   text-decoration: none;
   transition: color .2s ease-in;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color--secondary;
     text-decoration: underline;
   }
@@ -30,11 +31,7 @@ h6 {
   margin: 0;
 
   a {
-    color: inherit;
-
-    &:hover {
-      color: inherit;
-    }
+    color: currentColor;
   }
 }
 
@@ -79,10 +76,6 @@ li {
   }
 }
 
-p:first-of-type {
-  margin-top: 0;
-}
-
 blockquote {
   font-style: italic;
   margin: rem(20px);
@@ -101,6 +94,10 @@ blockquote {
   p {
     font-weight: 400;
   }
+}
+
+p:first-of-type {
+  margin-top: 0;
 }
 
 pre {
