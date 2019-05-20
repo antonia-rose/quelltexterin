@@ -13,4 +13,4 @@ draft: false
 
 Seit 2006 arbeite ich im Bereich der Webentwicklung. Seit September 2017 bin ich als Senior Software Developer bei [Sevenval Technologies](https://www.sevenval.com) angestellt. Dort setze ich komplexe Frontendstrategien mit der neusten Technologie und meinen zwölf Jahren Erfahrung um. Meine Leidenschaft dabei liegt auf Refactoring, Standardisierung und Barrierefreiheit.
 
-Privat sammle ich analoge Kameras und lerne mit ihen umzugehen. Manchmal muss ich aber auch meinem Staubsauger-Roboter Django nachlaufen, weil er sich wieder verfahren hat. Neben Django habe ich zwei weitere Haustiere: Jack Black und Johnny Cash. Die beiden sind Katzen und sorgen dafür, dass ich immer irgendwie Katzenhaare an mir habe.
+Privat sammle ich analoge Kameras und lerne mit ihnen umzugehen. Manchmal muss ich aber auch meinem Staubsauger-Roboter Django nachlaufen, weil er sich wieder verfahren hat. Neben Django habe ich zwei weitere Haustiere: Jack Black und Johnny Cash. Die beiden sind Katzen und sorgen dafür, dass ich immer irgendwie Katzenhaare an mir habe.
