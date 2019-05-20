@@ -1,4 +1,4 @@
-
+/* stylelint-disable at-rule-blacklist */
 @media screen and (min-width: $breakpoint-ml) {
   %htmlTagIndicator {
     color: rgba($color-lightgrey, .5);
@@ -29,3 +29,4 @@
     content: '<blockquote>';
   }
 }
+/* stylelint-enable */

@@ -4,7 +4,7 @@ tags: ["tools", "webserie"] # Adds tags to the post
 description: "Einstieg in die Webserie Meine Werkzeuge."
 cover: "" # Cover used for OpenGraph and Twitter Cards
 date: 2018-03-22T09:08:07Z
-draft: false
+draft: true
 ---
 
 In der kommenden Zeit möchte ich in der Webserie "Meine Werkzeuge" meine Tools, Arbeitsweisen und Projektarchitektur vorstellen. Dabei wird jedes Thema von der Organisation bis hin zum Livegang abgedeckt. Basis der Serie wird der Aufbau dieses Blogs sein, meine Learnings und Erfahrungen.

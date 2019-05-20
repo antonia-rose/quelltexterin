@@ -28,12 +28,12 @@
   },
   "homepage": "https://github.com/soophie/quelltexterin#readme",
   "devDependencies": {
-    "autoprefixer": "^8.1.0",
-    "husky": "^0.15.0-rc.8",
-    "node-sass": "^4.7.2",
-    "onchange": "^3.3.0",
-    "scss-cli": "0.0.6",
-    "stylelint": "^9.1.1",
-    "stylelint-config-sevenval": "^1.4.0"
+    "autoprefixer": "^9.5.0",
+    "husky": "^2.3.0",
+    "node-sass": "^4.12.0",
+    "onchange": "^5.2.0",
+    "postcss": "^7.0.16",
+    "stylelint": "^9.10.1",
+    "stylelint-config-sevenval": "^2.0.0"
   }
 }
