@@ -14,8 +14,8 @@
 
 <meta name='description' content='{{ partial "data/description" . }}' />
 <meta name="author" content="{{ .Site.Params.Info.author }}" />
-<link rel="shortcut icon" href="{{ .Site.BaseURL }}/favicon.ico" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css"b/>
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" href="/css/style.css"b/>
 {{- range .Site.Params.Assets.customCSS -}}
 <link rel='stylesheet' href='{{ . | relURL }}' />
 {{- end -}}
