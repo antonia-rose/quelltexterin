@@ -10,3 +10,5 @@ RUN hugo -d public --templateMetrics --debug
 
 FROM nginx:1.13-alpine
 COPY --from=builder /var/www/blog/public/ /usr/share/nginx/html
+# copy redirect rule
+COPY --from=builder /var/www/blog/deployment/ /etc/nginx/sites-available/

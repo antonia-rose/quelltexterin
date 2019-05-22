@@ -1,0 +1,9 @@
+server {
+	server_name quelltexterin.de;
+}
+
+# remove 'www'
+server {
+    server_name www.quelltexterin.de;
+    return 301 $scheme://quelltexterin.de$request_uri;
+}
