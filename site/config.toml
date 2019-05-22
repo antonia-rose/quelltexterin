@@ -1,4 +1,5 @@
 baseURL = "https://quelltexterin.de"
+relativeURLs = true
 languageCode = "de-de"
 title = "quelltexterin"
 
